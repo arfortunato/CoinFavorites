@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Commons
 
 public class CoinsFavoritesViewModel {
     // MARK: - Properts

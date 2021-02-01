@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Commons
 
 public class CoinsFavoritesViewController: UIViewController {
 
