@@ -40,12 +40,12 @@
 		607FACE51AFB9204008FA782 /* CoinFavorites_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinFavorites_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6FF47EDE31AD68675640A5E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		71EDDB0004CB8082DA8CF06E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6FF47EDE31AD68675640A5E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		71EDDB0004CB8082DA8CF06E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		82CBD928B5FA66EF2F57668F /* Pods-CoinFavorites_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinFavorites_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CoinFavorites_Tests/Pods-CoinFavorites_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5362B449E85430F6B0464D7 /* Pods_CoinFavorites_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinFavorites_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC21E11D1EA01F837C0C6A0B /* Pods_CoinFavorites_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinFavorites_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC77C9811A198B10EDB2BBB7 /* CoinFavorites.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CoinFavorites.podspec; path = ../CoinFavorites.podspec; sourceTree = "<group>"; };
+		CC77C9811A198B10EDB2BBB7 /* CoinFavorites.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CoinFavorites.podspec; path = ../CoinFavorites.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E4D092A014E80FBACDCB3EF2 /* Pods-CoinFavorites_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinFavorites_Example.debug.xcconfig"; path = "Target Support Files/Pods-CoinFavorites_Example/Pods-CoinFavorites_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				82CBD928B5FA66EF2F57668F /* Pods-CoinFavorites_Tests.debug.xcconfig */,
 				53E56EDED34AC83C3FA3EF05 /* Pods-CoinFavorites_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -292,10 +292,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CoinFavorites_Example/Pods-CoinFavorites_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CoinFavorites/CoinFavorites.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoinFavorites.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

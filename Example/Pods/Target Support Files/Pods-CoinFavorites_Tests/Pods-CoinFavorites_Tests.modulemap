@@ -1,0 +1,6 @@
+framework module Pods_CoinFavorites_Tests {
+  umbrella header "Pods-CoinFavorites_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

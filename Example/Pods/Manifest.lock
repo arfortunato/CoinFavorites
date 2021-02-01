@@ -1,0 +1,29 @@
+PODS:
+  - CoinFavorites (1.0.0):
+    - SDWebImage
+    - SnapKit
+  - SDWebImage (5.10.3):
+    - SDWebImage/Core (= 5.10.3)
+  - SDWebImage/Core (5.10.3)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - CoinFavorites (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+    - SnapKit
+
+EXTERNAL SOURCES:
+  CoinFavorites:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CoinFavorites: 988a11eca4cad66e6cd1b25c716834725731482b
+  SDWebImage: e378178472b735e84b007bfb55514c97948a0598
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: f9a51153d42dd556436554e66b2a2fc487ff471b
+
+COCOAPODS: 1.10.1

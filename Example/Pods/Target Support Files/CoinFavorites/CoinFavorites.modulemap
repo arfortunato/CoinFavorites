@@ -1,0 +1,6 @@
+framework module CoinFavorites {
+  umbrella header "CoinFavorites-umbrella.h"
+
+  export *
+  module * { export * }
+}
