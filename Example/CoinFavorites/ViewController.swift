@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoinFavorites
 
 class ViewController: UIViewController {
 

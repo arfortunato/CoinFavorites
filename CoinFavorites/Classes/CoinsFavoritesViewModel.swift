@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CoinsFavoritesViewModel {
+public class CoinsFavoritesViewModel {
     // MARK: - Properts
     var coinList: CoinsListViewModel = CoinsListViewModel()
     var coinFavorites: [CoinsViewData] = []
