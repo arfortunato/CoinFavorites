@@ -67,6 +67,13 @@ public class CoinsFavoritesViewController: UIViewController {
         return cvc
     }()
     let coinsFavoritesViewModel: CoinsFavoritesViewModel = CoinsFavoritesViewModel()
+    public init(){
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     public override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Adicionadas"
@@ -74,7 +81,7 @@ public class CoinsFavoritesViewController: UIViewController {
         coinsFavoritesViewModel.loadCoin()
         collectionView.reloadData()
     }
-    override var preferredStatusBarStyle: UIStatusBarStyle {
+    public override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
 }

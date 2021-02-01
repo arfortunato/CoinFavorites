@@ -32,6 +32,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'CoinFavorites/Classes/**/*'
   s.dependency 'SDWebImage'
+  s.dependency 'SnapKit'
   s.dependency 'Commons'
   # s.resource_bundles = {
   #   'CoinFavorites' => ['CoinFavorites/Assets/*.png']
