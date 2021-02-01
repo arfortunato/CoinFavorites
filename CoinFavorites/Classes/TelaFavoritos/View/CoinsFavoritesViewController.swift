@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CoinsFavoritesViewController: UIViewController {
+public class CoinsFavoritesViewController: UIViewController {
 
     let greenColor = UIColor(red: 139/255, green: 153/255, blue: 90/255, alpha: 1)
     let fontColor = UIColor(red: 230/255, green: 233/255, blue: 212/255, alpha: 1)
@@ -66,7 +66,7 @@ class CoinsFavoritesViewController: UIViewController {
         return cvc
     }()
     let coinsFavoritesViewModel: CoinsFavoritesViewModel = CoinsFavoritesViewModel()
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Adicionadas"
         setupViewConfiguration()
@@ -79,7 +79,7 @@ class CoinsFavoritesViewController: UIViewController {
 }
 
 extension CoinsFavoritesViewController: ViewConfiguration {
-    func buildViewHierarchy() {
+    public func buildViewHierarchy() {
         view.addSubview(titleView)
         titleView.addSubview(lblCoin)
         titleView.addSubview(lblDate)
@@ -87,7 +87,7 @@ extension CoinsFavoritesViewController: ViewConfiguration {
         view.addSubview(favoritesView)
         favoritesView.addSubview(collectionView)
     }
-    func setupConstraints() {
+    public func setupConstraints() {
         titleView.snp.makeConstraints { (make) in
             if #available(iOS 11.0, *) {
                 make.top.equalTo(view.safeAreaLayoutGuide)
@@ -127,24 +127,24 @@ extension CoinsFavoritesViewController: ViewConfiguration {
             make.bottom.equalTo(favoritesView).inset(10)
         }
     }
-    func configureViews() {
+    public func configureViews() {
         view.backgroundColor = blackColor
     }
 }
 
 extension CoinsFavoritesViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width/2.2, height: collectionView.frame.width/2.5)
     }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return coinsFavoritesViewModel.arrayCoin.count 
     }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CoinsFavoritesCollectionViewCell
         cell.configureCell(coin: (coinsFavoritesViewModel.arrayCoin[indexPath.item]))
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let coinSelected =  coinsFavoritesViewModel.arrayCoin[indexPath.row]
         let coinsDetailsViewModel = CoinsDetailsViewModel(viewData: coinSelected)
         let coinsDetailsViewController = CoinsDetailsViewController(coinsDetailsViewModel: coinsDetailsViewModel)
