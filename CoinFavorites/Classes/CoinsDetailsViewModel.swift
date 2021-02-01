@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import Commons
 class CoinsDetailsViewModel {
     // MARK: - Properts
     var coin: [String] = []

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Commons
 
 public protocol CoinsViewDataType {
     var name: String { get }

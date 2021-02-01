@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 import SDWebImage
+import Commons
 
 class CoinsDetailsViewController: UIViewController {
 
