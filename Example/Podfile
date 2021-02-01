@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'CoinFavorites_Example' do
+  pod 'CoinFavorites', :path => '../'
+
+  target 'CoinFavorites_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
